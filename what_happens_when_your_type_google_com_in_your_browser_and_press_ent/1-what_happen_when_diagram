@@ -1,0 +1,21 @@
+User Browser
+    |
+    v
+DNS Server (resolves www.google.com → IP)
+    |
+    v
+HTTPS Request (Encrypted TLS)
+    |
+Firewall
+    |
+Load Balancer
+    |
+-------------------------
+|                       |
+Web Server (Nginx)      Web Server (Nginx)
+        |
+        v
+Application Server
+        |
+        v
+Database
